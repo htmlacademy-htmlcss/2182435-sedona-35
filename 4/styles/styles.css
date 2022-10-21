@@ -1,0 +1,212 @@
+@font-face {
+
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    background-color: #F2F2F2;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/*
+.visually-hidden {
+    visibility: hidden
+}
+*/
+
+
+.search {
+    background-image: url("../images/Finde.svg");
+    background-repeat: no-repeat;
+}
+
+.favorites {
+    background-image: url("../images/Favorites.svg");
+    background-repeat: no-repeat;
+}
+
+.button {
+    color: rgb(255, 255, 255);
+    background-color: #756157;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.page-header {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.hiro {
+    background-image:
+        url("/images/Hero-background-bottom.svg"),
+        url("../images/Hero-background.jpg");
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+
+.advantages .advantages-description {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.advantages-description b {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: none;
+}
+
+.advantages-item .advantages-title {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.advantages-item .advantages-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: none;
+
+}
+
+.advantages-item li {
+    background-repeat: no-repeat;
+}
+
+.advantages-city {
+    background-color: #82B3D3;
+    color: rgb(255, 255, 255);
+    background-image: url("../images/photo-1.jpg");
+}
+
+.advantages-area {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-road {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-tourists {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-bridge {
+    background-color: #82B3D3;
+    color: rgb(255, 255, 255);
+    background-image: url("../images/photo-2 .jpg");
+}
+
+.advantages-hous {
+    background-color: rgba(131, 179, 211, 0.12);
+    background-image: url("../images/i-Vector.svg");
+}
+
+.advantages-food {
+    background-image: url("../images/i-food.svg");
+}
+
+.advantages-souvenirs {
+    background-image: url("../images/i-Vector-1.svg");
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-description {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.hotel-search p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.newsletter {
+    color: rgb(255, 255, 255);
+    background-image: url("../images/Subscribe.jpg");
+    background-repeat: no-repeat;
+    background-color: #000000;
+
+
+}
+
+.page-footer-title {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+
+}
+
+.newsletter p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.newsletter-button {
+    color: rgb(255, 255, 255);
+    background-color: #82B3D3;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.button-tvit {
+    background-image: url("../images/TLG.svg");
+    background-repeat: no-repeat;
+}
+
+.button-vk {
+    background-image: url("../images/VK.svg");
+    background-repeat: no-repeat;
+}
+
+.button-YT {
+    background-image: url("../images/YT.svg");
+    background-repeat: no-repeat;
+}
+
+.footer-contacts-phone {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.made-in {
+    background-image: url("../images/logo-HTML-Academy.svg");
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
