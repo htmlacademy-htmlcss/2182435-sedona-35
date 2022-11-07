@@ -70,7 +70,7 @@ a {
     margin-left: 30px;
 }
 
-.navigation-list .navigation-item {
+.navigation-list .navigation-link {
     padding: 20px 16px;
 }
 
@@ -161,6 +161,17 @@ a {
     width: 1200px;
 }
 
+.advantages-city .advantages-title,
+.advantages-city .advantages-description {
+    width: 400px;
+}
+
+.advantages-bridge .advantages-title,
+.advantages-bridge .advantages-description {
+    width: 400px;
+    margin-left: 800px;
+}
+
 .advantages-area,
 .advantages-road,
 .advantages-tourists,
@@ -201,7 +212,8 @@ a {
 .advantages-city {
     background-color: #82B3D3;
     color: rgb(255, 255, 255);
-    background-image: url("../images/photo-1.jpg");
+   background-image: url("../images/photo-1.jpg");
+   background-position: center right;
 }
 
 .advantages-area {
@@ -273,7 +285,7 @@ a {
 
 }
 
-.page-footer-title p {
+.newsletter p {
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
