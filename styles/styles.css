@@ -48,7 +48,14 @@ a {
 }
 
 .visually-hidden {
-    visibility: hidden
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 
@@ -64,8 +71,8 @@ a {
 }
 
 .navigation-list {
-    width: 339px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-left: 30px;
 }
@@ -75,30 +82,40 @@ a {
 }
 
 .navigation-user {
-    width: 268px;
     display: flex;
     margin-left: auto;
-    align-items: center;
+    margin-right: 70px;
+    align-content: center;
+}
+
+.navigation-user li {
+    display: block;
+    min-width: 44px;
+    min-height: 64px;
 }
 
 
 .search {
-    background-image: url("../images/Finde.svg");
+    background-image: url("../images/finde.svg");
     background-repeat: no-repeat;
+    margin: auto;
 }
 
 .favorites {
-    background-image: url("../images/Favorites.svg");
+    background-image: url("../images/favorites.svg");
     background-repeat: no-repeat;
+    margin: auto;
 }
 
 .favorites-number {
+    width: 20px;
+    height: 20px;
     font-weight: 400;
     font-size: 10px;
     line-height: 10px;
     background-color: #7DB54F;
     border-radius: 50%;
-    padding: 5px 1px;
+    padding: 5px 6px;
     color: #ffffff;
 }
 
@@ -106,6 +123,13 @@ a {
     color: rgb(255, 255, 255);
     background-color: #756157;
     border-radius: 4px;
+}
+
+.here {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 8px 34px;
 }
 
 .page-header {
@@ -119,11 +143,17 @@ a {
 
 .hiro {
     background-image:
-        url("/images/Hero-background-bottom.svg"),
-        url("../images/Hero-background.jpg");
+        url("../images/hero-background-bottom.svg"),
+        url("../images/hero-background.jpg");
     background-repeat: no-repeat;
     background-color: #000000;
     background-position: bottom;
+    min-height: 485px;
+}
+
+.hiro-text {
+
+    margin: 51px auto auto;
 }
 
 
@@ -140,48 +170,156 @@ a {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
-    margin: 69px auto 90px;
-    width: 660px;
+    margin: 69px auto 25px;
+
 }
 
-.title-advantages-description b {
+.advantages p {
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
     text-transform: none;
+    margin: 0 auto 90px;
+
 }
+
+/*                                                   Описание квадратики  */
 
 .advantages-item {
     display: flex;
     flex-wrap: wrap;
 }
 
-.advantages-city,
+.advantages-item h3 {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin: auto;
+    padding: 0;
+    width: 175px;
+}
+
+.advantages-item p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin: auto;
+    padding: 0;
+    width: 230px;
+}
+
+
+
+.advantages-item li {
+    background-repeat: no-repeat;
+}
+
+.advantages-city {
+    width: 1200px;
+    min-height: 384px;
+    background-color: #82B3D3;
+    color: rgb(255, 255, 255);
+    background-image: url("../images/photo-1.jpg");
+    background-position: center right;
+}
+
+.advantages-area {
+    width: 400px;
+    min-height: 384px;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-road {
+    width: 400px;
+    min-height: 384px;
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-tourists {
+    width: 400px;
+    min-height: 384px;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
 .advantages-bridge {
     width: 1200px;
+    min-height: 384px;
+    background-color: #82B3D3;
+    color: rgb(255, 255, 255);
+    background-image: url("../images/photo-2 .jpg");
 }
 
-.advantages-city .advantages-title,
-.advantages-city .advantages-description {
+.advantages-hous {
     width: 400px;
+    min-height: 384px;
+    background-color: rgba(131, 179, 211, 0.12);
+    background-image: url("../images/i-vector.svg");
 }
 
-.advantages-bridge .advantages-title,
-.advantages-bridge .advantages-description {
+.advantages-food {
     width: 400px;
-    margin-left: 800px;
+    min-height: 384px;
+    background-image: url("../images/i-food.svg");
 }
 
-.advantages-area,
-.advantages-road,
-.advantages-tourists,
-.advantages-hous,
-.advantages-food,
 .advantages-souvenirs {
     width: 400px;
+    min-height: 384px;
+    background-image: url("../images/i-vector-1.svg");
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+/*                                                   Выравнивания квадратов*/
+
+.advantages-city .advantages-title {
+    margin: 92px auto 62px 112px;
+}
+
+.advantages-city .advantages-description {
+    margin: 0 auto 111px 85px;
 }
 
 
+
+.advantages-bridge .advantages-title {
+    margin: 92px 112px 62px auto;
+}
+
+.advantages-bridge .advantages-description {
+    margin: 0 85px 111px auto;
+}
+
+
+
+.advantages-hous .advantages-title,
+.advantages-food .advantages-title,
+.advantages-souvenirs .advantages-title {
+    margin: 182px auto 30px;
+}
+
+.advantages-hous .advantages-description,
+.advantages-food .advantages-description,
+.advantages-souvenirs .advantages-description {
+    margin: 0 auto 81px;
+}
+
+
+
+.advantages-area .advantages-title,
+.advantages-road .advantages-title,
+.advantages-tourists .advantages-title {
+    margin: 103px auto 62px;
+}
+
+.advantages-area .advantages-description,
+.advantages-road .advantages-description,
+.advantages-tourists .advantages-description {
+    margin: 0 auto 121px;
+}
+
+
+
+/*                                                   Поиск  */
 
 .hotel-search {
     width: 592px;
@@ -191,65 +329,6 @@ a {
 .button.hotel-search {
     padding: 8px 50px;
 }
-
-
-.advantages-item .advantages-title {
-    font-size: 24px;
-    line-height: 28px;
-}
-
-.advantages-item .advantages-description {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: none;
-}
-
-.advantages-item li {
-    background-repeat: no-repeat;
-}
-
-.advantages-city {
-    background-color: #82B3D3;
-    color: rgb(255, 255, 255);
-   background-image: url("../images/photo-1.jpg");
-   background-position: center right;
-}
-
-.advantages-area {
-    background-color: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-road {
-    background-color: rgba(131, 179, 211, 0.2);
-}
-
-.advantages-tourists {
-    background-color: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-bridge {
-    background-color: #82B3D3;
-    color: rgb(255, 255, 255);
-    background-image: url("../images/photo-2 .jpg");
-}
-
-.advantages-hous {
-    background-color: rgba(131, 179, 211, 0.12);
-    background-image: url("../images/i-Vector.svg");
-}
-
-.advantages-food {
-    background-image: url("../images/i-food.svg");
-}
-
-.advantages-souvenirs {
-    background-image: url("../images/i-Vector-1.svg");
-    background-color: rgba(131, 179, 211, 0.12);
-}
-
-
-/*                                                   Поиск  */
 
 .hotel-search .advantages-description {
     font-size: 30px;
@@ -268,7 +347,7 @@ a {
 
 .newsletter {
     color: rgb(255, 255, 255);
-    background-image: url("../images/Subscribe.jpg");
+    background-image: url("../images/subscribe.jpg");
     background-repeat: no-repeat;
     background-color: #000000;
     width: 1200px;
@@ -305,41 +384,55 @@ a {
 /*                                                   Футер  */
 
 .page-footer {
-display: flex;
-flex-wrap: wrap;
-}
-
-.footer-social {
     display: flex;
     flex-wrap: wrap;
-    }
+}
+
+.footer-social-list {
+    width: 142px;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 45px auto 35px 70px;
+    padding: 0;
+}
+
+.footer-social-item {
+    width: 47px;
+}
+
 
 .footer-contacts {
     display: flex;
+    width: 876px;
+
 }
 
 .button-tvit {
-    background-image: url("../images/TLG.svg");
+    background-image: url("../images/tlg.svg");
     background-repeat: no-repeat;
 }
 
 .button-vk {
-    background-image: url("../images/VK.svg");
+    background-image: url("../images/vk.svg");
     background-repeat: no-repeat;
 }
 
-.button-YT {
-    background-image: url("../images/YT.svg");
+.button-yt {
+    background-image: url("../images/yt.svg");
     background-repeat: no-repeat;
 }
 
 .footer-contacts-phone {
+    width: 331px;
     font-weight: 400;
     font-size: 40px;
     line-height: 40px;
 }
 
 .made-in {
-    background-image: url("../images/logo-HTML-Academy.svg");
+    width: 115px;
+    background-image: url("../images/logo-html-academy.svg");
     background-repeat: no-repeat;
 }
