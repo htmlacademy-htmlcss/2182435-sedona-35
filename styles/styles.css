@@ -165,8 +165,10 @@ margin: 16px auto 0;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    padding: 8px 34px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     text-decoration: none;
+    min-width: 160px;
 }
 
 .page-header {
@@ -373,7 +375,7 @@ margin: 16px auto 0;
     width: 90%;
     margin: 96px auto 104px;
     text-decoration: none;
-    padding: 8px 50px;
+    padding: 13px 50px;
 }
 
 .hotel-search .advantages-description {
